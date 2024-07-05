@@ -1,0 +1,133 @@
+@use "base" as *;
+
+.container-1 {
+  display: grid;
+  grid-template-columns: repeat(9, 100px);
+  grid-template-rows: repeat(1, 100px);
+  gap: 6;
+  font-size: $font-size;
+  padding: 50px;
+
+  div {
+    border-radius: 10%;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: $text-color;
+  }
+  .base-color {
+    background-color: $base-color-1;
+  }
+
+  @for $i from 1 through 4 {
+    .darken-#{$i} {
+      background-color: darken($color: $base-color-1, $amount: $i * 10%);
+    }
+    .lighten-#{$i} {
+      background-color: lighten($color: $base-color-1, $amount: $i * 2.5%);
+    }
+  }
+}
+.container-2 {
+  display: grid;
+  grid-template-columns: repeat(9, 100px);
+  grid-template-rows: repeat(1, 100px);
+  gap: 6;
+  font-size: $font-size;
+  padding: 50px;
+
+  div {
+    border-radius: 10%;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: $text-color;
+  }
+
+  .base-color2 {
+    background-color: $base-color-2;
+  }
+
+  @for $i from 1 through 4 {
+    .darken2-#{$i} {
+      background-color: darken($color: $base-color-2, $amount: $i * 7%);
+    }
+    .lighten2-#{$i} {
+      background-color: lighten($color: $base-color-2, $amount: $i * 2.5%);
+    }
+  }
+}
+.container-3 {
+  display: grid;
+  grid-template-columns: repeat(9, 100px);
+  grid-template-rows: repeat(1, 100px);
+  gap: 6;
+  font-size: $font-size;
+  padding: 50px;
+
+  div {
+    border-radius: 10%;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: $text-color;
+  }
+
+  .base-color3 {
+    background-color: $base-color-3;
+  }
+
+  @for $i from 1 through 4 {
+    .darken3-#{$i} {
+      background-color: darken($color: $base-color-3, $amount: $i * 7%);
+    }
+    .lighten3-#{$i} {
+      background-color: lighten($color: $base-color-3, $amount: $i * 2.5%);
+    }
+  }
+}
+.container-4 {
+  display: grid;
+  grid-template-columns: repeat(9, 100px);
+  grid-template-rows: repeat(1, 100px);
+  gap: 6;
+  font-size: $font-size;
+  padding: 50px;
+
+  div {
+    border-radius: 10%;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: $text-color;
+  }
+
+  .base-color4 {
+    background-color: $base-color-4;
+  }
+
+  @for $i from 1 through 4 {
+    .darken4-#{$i} {
+      background-color: darken($color: $base-color-4, $amount: $i * 7%);
+    }
+    .lighten4-#{$i} {
+      background-color: lighten($color: $base-color-4, $amount: $i * 2.5%);
+    }
+  }
+}
